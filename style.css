@@ -1,11 +1,14 @@
+
+/*global*/
 * {
     color: black;
 }
-
 * div {
     background-color: skyblue;
     text-align: center;
 }
+
+/*chap001*/
 
 .box1 , .box2 {
     float: left;
@@ -21,4 +24,33 @@
     content: "";
     display: block;
     clear:both;
+}
+
+
+
+
+/*chap002*/
+.box2-1, .box2-2, .box2-3 {
+    float: left;
+    width: 33.3333%;
+}
+
+.boxB:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+
+
+/*chap003*/
+.boxRow{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.boxRow div{
+    float: left;
+    width: 50%;
 }
