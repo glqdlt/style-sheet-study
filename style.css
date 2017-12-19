@@ -1,0 +1,24 @@
+* {
+    color: black;
+}
+
+* div {
+    background-color: skyblue;
+    text-align: center;
+}
+
+.box1 , .box2 {
+    float: left;
+    width: 50%;
+}
+
+.box3 , .box4{
+    color: red;
+}
+
+
+.boxA:after {
+    content: "";
+    display: block;
+    clear:both;
+}
