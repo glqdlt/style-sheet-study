@@ -61,6 +61,7 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 36px;
+    font-weight: lighter;
 }
 
 .story p {
@@ -73,6 +74,13 @@ body {
     height: auto;
 }
 
+.story h2 {
+    margin-top: 40px;
+    padding-left: 10px;
+    border-left: solid 10px #7cbac1;
+    font-weight: lighter;
+}
+
 .story_info {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -80,12 +88,103 @@ body {
 
 .story_info i {
     margin-right: 5px;
-    color : #aaaaaa;
+    color: #aaaaaa;
     font-size: 20px;
 }
 
+.story_cat ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.story_cat ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.story_cat {
+    margin-bottom: 25px;
+}
+
+.story_cat li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px 5px;
+    display: block;
+    font-size: 14px;
+    background-color: #75dbe7;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.story_cat li a:hover {
+    background-color: deepskyblue;
+}
+
+.story_cat li {
+    float: left;
+    width: auto;
+}
+
+
+/*share*/
+
+.share {
+    margin-top: 40px;
+}
+
+.share ul {
+    margin: 0;
+    padding : 0;
+    list-style: none;
+}
+
+.share li a {
+    display: block;
+    padding: 10px 5px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.share_tw{
+    background-color: #55acee;
+}
+.share_fa{
+    background-color: #3d5998;
+}
+.share_gp{
+    background-color: #dd4b39;
+}
+
+.share i{
+    margin-right: 5px;
+}
+
+.share a:hover{
+    opacity: 0.8;
+}
+
+.share ul:after {
+    content: none;
+    display: block;
+    clear: both;
+}
+
+.share li {
+    float: left;
+    width:33.3333%
+}
 
 /*side_menu*/
+
+.side_menu i, .recommend i {
+    margin-right: 5px;
+    color: #888888;
+}
 
 .side_menu {
     margin-bottom: 30px;
@@ -130,15 +229,46 @@ body {
 }
 
 .recommend li a {
-    padding: 5px;
+    padding: 0;
     color: #000000;
     font-size: 14px;
     text-decoration: none;
     display: block;
+    margin-bottom: 10px;
+}
+
+.recommend img {
+    width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: bottom;
+}
+
+/*rgba(r,g,b,alpha(max:1 min :0 middle:0.5))*/
+.recommend .text {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/*이미지와 글자 겹치기*/
+
+.recommend a{
+    position: relative;
+}
+
+.recommend .text{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
 .recommend li a:hover {
     background-color: #eeeeee;
+    opacity: 0.8;
 }
 
 .recommend h1 {
@@ -155,6 +285,36 @@ body {
     margin-bottom: 30px;
 }
 
+.popular a:after {
+    content: none;
+    display: block;
+    clear: both;
+}
+
+.popular img {
+    float: left;
+    width: 45px;
+    height: 45px;
+}
+
+.popular a img {
+    border: none;
+    margin-right: 15px;
+}
+
+.popular a .text {
+    float: none;
+    width: auto;
+    padding-left: 15px;
+}
+
+.popular a span {
+    display: block;
+    color: #666666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 .popular ul {
     margin: 0;
     padding: 0;
@@ -167,6 +327,7 @@ body {
     color: #000000;
     font-size: 14px;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .popular li a:hover {
@@ -217,6 +378,15 @@ body {
 
 /*599 이하*/
 @media (max-width: 599px) {
+
+
+    /*share btn..*/
+
+    /*text-ident 는 들여쓰기로, -9999 px 로 그러니깐 우주밖으로 보내는 형태라서 안보이는 효과가 나타남*/
+    .share span{
+        display: inline-block;
+        text-indent: -9999px;
+    }
 
     /*navigation*/
     .menu li a {
