@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*@media 브레이크 포인트 : 800px 이하 일 경우 브레이크*/
+        @media (min-width: 800px){
+
+            .boxA:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .box2 {
+                float: left;
+                width: 300px;
+                height: 100px;
+                background: aqua;
+            }
+
+            .box3 {
+                float: none;
+                width: auto;
+                margin-left: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="box1">
+    BOX1
+</div>
+<div class="boxA">
+    <div class="box2">
+        BOX2
+    </div>
+    <div class="box3">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+        the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+        Lorem Ipsum.
+    </div>
+</div>
+<div class="box4">
+    BOX4
+</div>
+
+
+</body>
+</html>

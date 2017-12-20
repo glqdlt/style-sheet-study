@@ -1,8 +1,8 @@
-
 /*global*/
 * {
     color: black;
 }
+
 * div {
     background-color: skyblue;
     text-align: center;
@@ -10,24 +10,20 @@
 
 /*chap001*/
 
-.box1 , .box2 {
+.box1, .box2 {
     float: left;
     width: 50%;
 }
 
-.box3 , .box4{
+.box3, .box4 {
     color: red;
 }
-
 
 .boxA:after {
     content: "";
     display: block;
-    clear:both;
+    clear: both;
 }
-
-
-
 
 /*chap002*/
 .box2-1, .box2-2, .box2-3 {
@@ -38,19 +34,33 @@
 .boxB:after {
     content: "";
     display: block;
-    clear:both;
+    clear: both;
 }
 
-
-
 /*chap003*/
-.boxRow{
+.boxRow :after {
     content: "";
     display: block;
     clear: both;
 }
 
-.boxRow div{
+.boxRowChild {
     float: left;
     width: 50%;
+    background-color: blue;
+}
+
+/* chap004 */
+
+.over-box-child {
+    width: 25%;
+}
+
+#overHidden :after {
+    overflow: hidden;
+}
+
+.float-child {
+    float: left;
+    color: red;
 }

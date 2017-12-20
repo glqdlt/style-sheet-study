@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .BoxA {
+            border: solid 8px blue;
+        }
+
+        .BoxA .Box1 {
+            border: solid 8px yellow;
+            background-color: beige;
+            line-height: 200px;
+        }
+
+        .BoxA .Box2 {
+            border: solid 8px red;
+            background-color: pink;
+            line-height: 100px;
+        }
+
+        /*BoxA 는 이제 그룹 안의 child 의 기준이 된다.*/
+        .BoxA{
+            position: relative;
+        }
+
+        /*이제 Box2 는 BoxA그룹을 기준으로 고정 포지셔닝된다.*/
+        .Box2{
+            position: absolute;
+            top: 100px;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="BoxA">
+    <div class="Box1">
+        BOX1
+    </div>
+    <div class="Box2">
+        BOX2
+    </div>
+
+</div>
+
+</body>
+</html>

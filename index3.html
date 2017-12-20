@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        @media (min-width: 800px) {
+
+            .box-row:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .box-row-child {
+                float: left;
+                width: 80%;
+            }
+
+            .box-row-child:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            .box2 {
+                float: right;
+                width: 75%;
+                background: aqua;
+            }
+
+            .box3 {
+                float: left;
+                width: 25%;
+                background: red;
+            }
+
+            .box4 {
+                float: left;
+                width: 20%;
+                background: aquamarine;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box1">
+    BOX1
+</div>
+<div class="box-row">
+    <div class="box-row-child">
+        <div class="box2">
+            BOX2
+        </div>
+        <div class="box3">
+            BOX3
+        </div>
+    </div>
+
+    <div class="box4">
+        BOX4
+    </div>
+</div>
+<div class="box5">
+    BOX5
+</div>
+
+
+</body>
+</html>

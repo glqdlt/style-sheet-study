@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <!--아래 initial-scale 은 모바일에서 화면 가로로 돌릴 시에 브라우저가 화면 너브를 지멋대로 가로로 늘리는 경우가 있음 이를 막고자할 때-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <style>
+        /*charset 은 .css 파일로 분활되었을 때만 먹힘*/
+        /*@charset "UTF-8";*/
+        /*text-decoration 은 앵커 태그의 밑줄이나 하이퍼링크 스러운 스타일을 none 시켜버림 wow*/
+
+        body {
+            font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        .site h1 a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .site h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .site p {
+            margin: 0;
+            font-size: 12px;
+        }
+    </style>
+    <style>
+        .story h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .story p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    </style>
+    <style>
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 5px;
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: lightgray;
+        }
+
+        .menu ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /*width 을 auto 로 주는 것은 글자 length에 자동으로 맞추어서 block 잡으라고 하는 것*/
+        .menu li {
+            float: left;
+            width: auto;
+        }
+    </style>
+
+    <style>
+        .copyright p {
+            margin: 0;
+            color: #666666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site">
+    <h1><a href="#">Lorem Ipsum</a></h1>
+    <p>What is Lorem Ipsum?</p>
+</div>
+
+<div class="menu">
+    <ul>
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Sub1</a></li>
+        <li><a href="#">Sub2</a></li>
+        <li><a href="#">Sub3</a></li>
+        <li><a href="#">Sub4</a></li>
+
+    </ul>
+
+</div>
+<div class="story">
+    <h1>
+        Where does it come from?</h1>
+
+    <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
+        over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+        source.
+    </p>
+    <p>
+        Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in
+        45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+        sit amet..", comes from a line in section 1.10.32.
+    </p>
+</div>
+<div class="copyright">
+    <p>This is Copyright area</p>
+    <p>Copyright &copy; Iw.Jhun</p>
+</div>
+
+</body>
+</html>

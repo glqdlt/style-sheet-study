@@ -24,7 +24,7 @@
         BOX4
     </div>
 </div>
-<br/>
+<hr/>
 
 <!--3블록 가로정렬-->
 <div id="chap002">
@@ -45,21 +45,41 @@
     </div>
 </div>
 
-<br/>
+<hr/>
 <!-- 블록 안에 2개의 자식을 가로 로 정렬 -->
 
 <div id="chap003">
     <div class="boxRow">
-        <div>
+        <div class="boxRowChild">
             BOX-ROW-1
         </div>
-        <div>
+        <div class="boxRowChild">
             BOX-ROW-2
         </div>
-
     </div>
+</div>
 
+<hr/>
+
+<!-- 클리어픽스를 적용하지 않는 방안 : overflow :hidden -->
+
+<div id="chap004">
+    <div class="over-box-child">
+        BOX-ROW-1
+    </div>
+    <div id="overHidden">
+        <div class="over-box-child float-child">
+            BOX-ROW-2
+        </div>
+        <div class="over-box-child float-child">
+            BOX-ROW-3
+        </div>
+    </div>
+    <div class="over-box-child">
+        BOX-ROW-4
+    </div>
 </div>
 
 </body>
 </html>
+
