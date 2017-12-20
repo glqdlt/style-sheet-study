@@ -246,6 +246,15 @@ body {
         width: 50%;
     }
 
+    .box4-1{
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .box4-2{
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
 }
 
 /*768 이상*/
@@ -279,4 +288,10 @@ body {
 
 @media (min-width: 1040px) {
 
+    /* 1000 px 로 고정을 하고, margin left right : auto 를 주어서 1000px 이상에 발생하는 여백은 auto로 정렬하게함, 이렇게 되면 center 정렬 효과가 나옴*/
+    .box1, .box2, .boxA, .box5 {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
