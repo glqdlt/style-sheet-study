@@ -7,7 +7,15 @@ body {
 /* site title */
 .site h1 a {
     text-decoration: none;
-    color: #000000;
+    /*color: #000000;*/
+    color: #83a4a8;
+}
+
+.site h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: normal;
 }
 
 .site h1 {
@@ -64,6 +72,18 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+.story_info {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.story_info i {
+    margin-right: 5px;
+    color : #aaaaaa;
+    font-size: 20px;
+}
+
 
 /*side_menu*/
 
@@ -241,17 +261,17 @@ body {
         width: 50%;
     }
 
-    .box4-2{
+    .box4-2 {
         float: left;
         width: 50%;
     }
 
-    .box4-1{
+    .box4-1 {
         padding-right: 20px;
         box-sizing: border-box;
     }
 
-    .box4-2{
+    .box4-2 {
         padding-left: 20px;
         box-sizing: border-box;
     }
