@@ -6,7 +6,7 @@ body {
 }
 
 .box1, .boxA, .box2_inner, .box5_inner {
-    padding-left:10px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -134,6 +134,56 @@ body {
     width: auto;
 }
 
+/*summart*/
+
+.boxA .summary h1 {
+    font-size: 36px;
+    margin: 0 15px 20px;
+
+}
+
+.boxA .summary p {
+
+    margin: 0 15px 20px;
+
+}
+
+.boxA .more{
+    display: inline-block;
+    background-color: #3077be;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+.boxA .more i{
+    margin-left: 10px;
+}
+
+.boxA .summary img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+
+    margin-bottom: 15px;
+    vertical-align: bottom;
+}
+
+.top .boxA {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.summary a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    border: solid 1px #dddddd;
+}
+
+.summary a:hover {
+    box-shadow: 0 0 10px #dddddd;
+}
+
 /*share*/
 
 .share {
@@ -183,7 +233,7 @@ body {
 
 .share li {
     float: left;
-    width: 33.3333%
+    width: 33.3333%;
 }
 
 /*relation*/
@@ -216,11 +266,11 @@ body {
     text-decoration: none;
 }
 
-.relation li a:hover{
+.relation li a:hover {
     text-decoration: underline;
 }
 
-.relation ul:after{
+.relation ul:after {
     content: "";
     display: block;
     clear: both;
@@ -231,7 +281,7 @@ body {
     width: 25%;
 }
 
-.relation img{
+.relation img {
     max-width: 100%;
     height: auto;
     border: none;
@@ -438,15 +488,15 @@ body {
 @media (max-width: 599px) {
 
     /*relation*/
-
-    .relation{
+    .relation {
         padding: 10px;
     }
+
     .relation li {
         width: 50%;
     }
 
-    .relation li:nth-child(3){
+    .relation li:nth-child(3) {
         clear: both;
     }
 
